@@ -3,10 +3,11 @@
 <head>
      <title>Emmy Noether || İpek's Archive</title>
      <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
    
     <body style="background: url('nother.png') center center fixed; background-size: cover;">
-       
+  
+   
 
       <head><link rel="apple-touch-icon" sizes="180x180" href="CS/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="CS/favicon-32x32.png">
@@ -14,23 +15,29 @@
         <link rel="manifest" href="CS/site.webmanifest">
       </head>
 
-   <meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
-<meta http-equiv='pragma' content='no-cache'>
+
+
 
      <style>
 
+body {
+            margin: 0;
+            padding: 0;
+            background: url('nother.png') center center fixed;
+            background-size: cover;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-size: contain;
+            }
+        }
 
           * {
     box-sizing: border-box;
   }
 
 
-          * {
-    box-sizing: border-box;
-  }
-
-           
 
   h2 {
                font-size: 2rem;
@@ -139,15 +146,15 @@
         <p>Let's go through some terms and concepts before explaining what brilliant Emmy Noether
           has achieved.
         </p>
-        <p><strong>What is Symmetry: </strong> An object is symmetrical if there is an action we can perform on it, such as reflecting or turning it, so that after the action, it appears identical to its original state.
+        <p><strong>What is Symmetry: </strong> "An object is symmetrical if there is an action we can perform on it, such as reflecting or turning it, so that after the action, it appears identical to its original state.
            For instance, a symmetrical vase retains its appearance even if we reflect or rotate it.
             Symmetry, in this context, refers to an operation that can be done to an object or system that leaves it unchanged.
             <strong>A conservation law </strong>, meanwhile, refers to a physical quantity that remains fixed and hence does not fluctuate over time. These 2 terms somehow
-            feel relatable.
+            feels relatable.
             Few symmetries to understand before diving into the whole idea:
             <p><strong>Space translation symmetry:</strong> 
               Think about an object let's say an apple. Picture sliding the apple to a different location—perhaps to a corner. 
-            It has symmetry if you can slide the whole apple to a position in which it looks exactly the same as it did in its original position.
+            It has a symmetry if you can slide the whole apple to a position in which it looks exactly the same as it did in its original position.
             To describe translation symmetry, you need to specify the distance and direction of the translation.
             <p><strong>Rotational Symmetry:</strong>
             Imagine you have a perfectly round pizza on a round table. If you give the pizza a 
@@ -155,10 +162,13 @@
             <p><strong>Time Translation Symmetry:</strong> 
             Time translation symmetry refers to the idea that the laws of physics remain the same at all times. 
             In simpler terms, if you were observing a process or an object, and you came back later (whether it's a second or a century later), 
-            the rules governing that process or object wouldn't have changed. Imagine a perfectly smooth, frictionless hill, and a ball rolling down it. In this idealized scenario, 
+            the rules governing that process or object wouldn't have changed.Imagine a perfectly smooth, frictionless hill, and a ball rolling down it. In this idealized scenario, 
             if you roll the ball down the hill and observe its motion, the laws of physics would ensure that the ball maintains the exact velocity and trajectory. Now, if you were to
              repeat the experiment a week later under the same ideal conditions, the ball would still roll down the hill with the same laws of physics, exhibiting time translation symmetry.
-        </p>
+        
+
+        
+            </p>
 
      
           </p>
@@ -168,8 +178,8 @@
         
 
         <div class="transparent-block">
-            <p><strong>Connecting the dots between the terms:</strong> The conservation laws were already there, thanks to Newton. However, with Einstein's general relativity,
-                there were some tiny issues about the conservation of energy. He suggested that gravity isn't a force but rather the result of space and time-bending around mass and energy. This new perspective challenges the traditional idea of gravity as a force acting at a distance.
+            <p><strong>Connecting the dots between the terms:</strong> The conservation laws were already there, thanks to Newton. However with Einstein's general relativity
+                there were some tiny issues about the conservation of energy. He suggested that gravity isn't a force but rather the result of space and time bending around mass and energy. This new perspective challenges the traditional idea of gravity as a force acting at a distance.
                  However, it also raised a concern because it seemed to clash with the long-standing principle of energy conservation.
                 It seemed like our old rules about energy can change forms but can never be destroyed were not quite working. 
                 -Total energy is supposed to remain constant after all.-
@@ -177,7 +187,7 @@
                 <p>
                  Einstein had been searching for an expression of the laws of gravitation, invariant under general coordinate transformations.
                  In 1915, two of the world’s top mathematicians, David Hilbert and Felix Klein, invited Emmy Noether to the University of Göttingen to investigate this puzzle.
-                Noether gladly accepted the challenge and her Theorem became a pivotal solution to this challenge. 
+                Noether, gladly accepted the challenge and her Theorem became a pivotal solution to this challenge. 
                 Her theorem established a profound connection between symmetries and conservation laws. 
 
                  What she uncovered went beyond mere equations; it established a profound link between symmetries and conservation laws. In the realm of general relativity, 
@@ -191,28 +201,29 @@
         </div>
 
         <div class="transparent-block">
-          <p>Now, let's explore the interplay of three crucial symmetries with conservation laws. 
-            First, the symmetry related to translational invariance implies that the laws of physics remain consistent 
-            regardless of where an experiment is conducted in space. This symmetry, as uncovered by Noether, gives rise to the
-             conservation of linear momentum. In the dynamic ballet of curved spacetime, this translates into a fundamental 
-             principle: the persistence of momentum despite the undulating gravitational landscape.
+          <p> As a summary, we have three fascinating ways things remain constant. Firstly, regardless of where you 
+            conduct an experiment in space, the rules of physics don't change (translational symmetry). This concept
+           leads to the conservation of linear momentum, ensuring that the push or pull of objects remains 
+            the same regardless of where an experiment is conducted in space. 
 
               <p>
                 Second, consider rotational invariance, a symmetry where the laws of physics remain unchanged under rotations. 
-                Noether's theorem connects this symmetry with the conservation of angular momentum. In the context of general 
-                relativity, where spacetime itself can twist and turn, the conservation of angular momentum stands as a testament 
-                to the unyielding nature of these symmetries.
-              </p>
+              Her theorem connects this symmetry with the conservation of angular momentum. For instance, imagine a spinning ice skater. 
+              As she extends her arms or brings them closer to her body, her rotational symmetry remains constant. 
+              In the context of general relativity, 
+                this characteristic persists even within the dynamic and curved nature of spacetime.
 
               <p>Finally, the symmetry of time invariance, meaning the laws of physics endure over time, 
-                aligns with the conservation of energy. Noether's brilliance unveiled the deep connection between this temporal 
-                symmetry and the persistence of energy, even in the warped, dynamic environment of gravitational fields.
-
-Together, these three symmetries and their associated conservation laws form a harmonious trio, 
-illuminating the intricate dance between the fabric of spacetime and the fundamental principles that govern the cosmos. 
-Noether's legacy echoes through the curvature of gravity, revealing the beauty in the symbiosis of symmetries and the conservation
+                aligns with the conservation of energy. Noether's insights reveal that this symmetry aligns
+                 with the conservation of energy, ensuring that the total energy in a system remains constant. 
+                 This principle persists even in the fluctuating and dynamic environment of gravitational fields.
+Together, these three symmetries and their associated conservation laws form a harmonious trio.
+Noether's legacy echoes through the curvature of gravity, revealing the beauty of symmetries and the conservation
  of essential physical quantities.
 
+ <center>
+  <img src="sym.png">
+</center>
 
         </p>
             
